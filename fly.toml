@@ -1,0 +1,9 @@
+# fly.toml file generated for casbah-gpt-discord-bot on 2023-04-14T16:46:05-04:00
+
+app = "casbah-gpt-discord-bot"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[env]
