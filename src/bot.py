@@ -169,7 +169,7 @@ def run_discord_bot():
                 `Bing`: Microsoft Bing model
 
 For complete documentation, please visit:
-https://github.com/Zero6992/chatGPT-discord-bot""")
+https://github.com/casbah-ma/kabbour-discord-bot""")
 
         logger.info(
             "\x1b[31mSomeone needs help!\x1b[0m")
