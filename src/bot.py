@@ -32,19 +32,6 @@ def run_discord_bot():
         await client.send_message(interaction, message)
 
 
-    @client.tree.command(name="private", description="Toggle private access")
-    async def private(interaction: discord.Interaction):
-        await interaction.response.defer(ephemeral=False)
-        if not client.isPrivate:
-            client.isPrivate = not client.isPrivate
-            logger.warning("\x1b[31mSwitch to private mode\x1b[0m")
-            await interaction.followup.send(
-                "> **INFO: Next, the response will be sent via private reply. If you want to switch back to public mode, use `/public`**")
-        else:
-            logger.info("You already on private mode!")
-            await interaction.followup.send(
-                "> **WARN: You already on private mode. If you want to switch to public mode, use `/public`**")
-
     @client.tree.command(name="public", description="Toggle public access")
     async def public(interaction: discord.Interaction):
         await interaction.response.defer(ephemeral=False)
